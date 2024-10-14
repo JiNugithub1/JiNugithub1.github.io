@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .feedback-form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SafeSign</h1>
+        <p>부동산 계약서의 안전성과 효력을 확인하세요!</p>
+    </header>
+    <div class="container">
+        <h2>서비스 소개</h2>
+        <p>AI가 계약서를 분석하고 누락된 부분을 체크하여 신뢰성을 제공합니다.</p>
+        
+        <h2>기능</h2>
+        <ul>
+            <li>계약서 누락 부분 체크</li>
+            <li>법적 효력 분석</li>
+            <li>사용자 맞춤형 피드백 제공</li>
+        </ul>
+
+        <h2>사용 방법</h2>
+        <p>계약서를 촬영하고 AI가 분석하는 간단한 절차입니다.</p>
+        
+        <h2>문의하기</h2>
+        <div class="feedback-form">
+            <form id="feedback-form">
+                <input type="text" placeholder="이름" required>
+                <textarea placeholder="문의 내용" required></textarea>
+                <button type="submit">제출</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('문의가 제출되었습니다!');
+        });
+    </script>
+</body>
+</html>
