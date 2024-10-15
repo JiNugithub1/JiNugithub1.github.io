@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeSign</title>
+    <title>AI 계약서 검토 시스템</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,17 +13,31 @@
         }
         header {
             text-align: center;
-            padding: 20px;
+            padding: 50px;
             background-color: #007bff;
+	margin: auto;
             color: white;
         }
+          .img {
+	text-align: center;
+            width: 100%; /* 이미지가 header의 너비에 맞추어짐 */
+            height: auto; /* 비율에 맞춰 높이 자동 조정 */
+	margin: auto;
+        }
         .container {
-            max-width: 800px;
+            max-width: 1200px; 
             margin: auto;
             background: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px; /* 위쪽 여백 추가 */
+        }
+        .container img {
+            width: 100%; /* 이미지가 container의 너비에 맞추어짐 */
+            height: auto; /* 비율에 맞춰 높이 자동 조정 */
+            border-radius: 5px; /* 모서리 둥글게 */
+            margin-bottom: 20px; /* 이미지 아래쪽 여백 추가 */
         }
         h1, h2 {
             color: #333;
@@ -31,7 +45,7 @@
         .cta-button {
             display: inline-block;
             padding: 10px 15px;
-            background: #28a745;
+            background: #800080;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -48,7 +62,7 @@
             border-radius: 5px;
         }
         button {
-            background-color: #007bff;
+            background-color: #800080;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -60,37 +74,47 @@
 <body>
     <header>
         <h1>SafeSign</h1>
-        <p>부동산 계약서의 안전성과 효력을 확인하세요!</p>
+        <p>당신의 계약서를 안전하게!</p>
     </header>
+	<div class="img">
+        <img src="![img1](https://github.com/user-attachments/assets/907caebb-68dc-4960-b108-025a5ec40da5)">
+        <img src="![img2](https://github.com/user-attachments/assets/9dcda08b-50ff-4ac1-a759-16e5cdbeebbf)">
+        <img src="![img3](https://github.com/user-attachments/assets/58b90d22-b39f-4d43-862b-aef49eeeecc4)">
+        <img src="![img4](https://github.com/user-attachments/assets/89da6127-668d-4758-8752-77a95e1fbe33)">
+	</div>
     <div class="container">
-        <h2>서비스 소개</h2>
-        <p>AI가 계약서를 분석하고 누락된 부분을 체크하여 신뢰성을 제공합니다.</p>
-        
-        <h2>기능</h2>
-        <ul>
-            <li>계약서 누락 부분 체크</li>
-            <li>법적 효력 분석</li>
-            <li>사용자 맞춤형 피드백 제공</li>
-        </ul>
-
-        <h2>사용 방법</h2>
+        <h1>서비스 소개</h1>
+        <p>AI가 계약서를 분석하고 계약서를 확인해줍니다.</p>
+        <p>법무부에 계약서 명시사항과 법적 조항을 통해 확실한 정보를 제공해줍니다.</p>
+        <hr>
+        <h1>기능</h1>
+	
+	<h4>계약서 자동 분석 및 문제 지적</h4>
+	<ul>
+            <li>AI는 계약서에서 흔히 발생하는 문제점을 찾아내고, 특정 조건이 누락되었거나 불합리한 조항이 있는 경우 이를 지적합니다.<br> 
+	이를 통해 사용자는 자신이 이해하지 못하는 계약서의 내용에 대한 정보와 주의점을 쉽게 확인할 수 있습니다.</li>
+            </ul>
+	<h4>위험 확률 계산 및 추천 시스템</h4>
+	<ul>
+            <li>이 기능은 AI가 분석한 계약서의 내용을 바탕으로, 해당 계약이 안전한지 여부를 확률로 계산하여 제공합니다. <br>
+	사용자는 계약이 안전할 확률, 전세사기 가능성, 법적 분쟁 발생 가능성 등을 직관적으로 확인할 수 있습니다.<br>
+	만약 위험 요소가 높은 계약이라면, AI는 이를 토대로 대체할 수 있는 안전한 매물이나 <br>
+	계약 조건을 추천하여 사용자가 보다 나은 결정을내릴 수 있도록 돕습니다.</li>
+            </ul>
+	<h4>법적 증명서 제출 및 검증 기능</h4>
+	<ul>
+            <li>이 기능은 사용자가 집주인과 중개업체의 법적 증명서를 AI에게 제출할 수 있는 시스템입니다. <br>
+	     AI는 제출된 증명서의 유효성을 확인하고, 해당 정보가 신뢰할 수 있는지 평가합니다. <br>
+                 예를 들어, 집주인의 소유권 증명서가 유효한지, 중개업체가 정식으로 등록된 곳인지 등을 체크하여, <br>
+	     사용자가 계약을 진행하기 전에 충분한 검증을 할 수 있도록 지원합니다.</li>
+            </ul><br>
+	<hr>
+        <h1>사용 방법</h1>
         <p>계약서를 촬영하고 AI가 분석하는 간단한 절차입니다.</p>
-        
-        <h2>문의하기</h2>
-        <div class="feedback-form">
-            <form id="feedback-form">
-                <input type="text" placeholder="이름" required>
-                <textarea placeholder="문의 내용" required></textarea>
-                <button type="submit">제출</button>
-            </form>
-        </div>
+        <hr>
+        <h1>피드백</h1>
+        <p>구글폼을 통해 피드백을 작성해주시면 감사하겠습니다!</p>
+        <a href="https://forms.gle/k3JYe8E8gGwbnF1z8" class="cta-button">구글폼</a>
     </div>
-
-    <script>
-        document.getElementById('feedback-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('문의가 제출되었습니다!');
-        });
-    </script>
 </body>
 </html>
